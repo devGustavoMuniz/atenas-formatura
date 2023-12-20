@@ -1,0 +1,3 @@
+cloud mongo
+atenas-admindb
+Y90mFWMktTWGmce0

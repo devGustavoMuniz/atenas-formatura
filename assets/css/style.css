@@ -833,13 +833,12 @@ header .m-menu {
 
 .portfolio {
   background-color: #171717;
-  padding-top: 115px;
-  padding-bottom: 115px;
+  margin-top: 115px;
+  padding: 50px 0;
 }
 @media only screen and (max-width: 1024px) {
   .portfolio {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 30px 0;
   }
 }
 .portfolio .item-wrapper {
@@ -1298,4 +1297,23 @@ header .social nav ul {
 }
 .about .title {
   text-align: center;
+}
+
+.carousel-cell {
+    width: 33%;
+    padding: 0 30px;
+}
+
+@media (max-width: 992px) {
+  .carousel-cell {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-cell {
+    width: 100%;
+    padding: 0 10px;
+  }
 }

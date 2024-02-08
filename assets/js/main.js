@@ -4,39 +4,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 const sections = document.querySelectorAll(".section");
 
-const navHighlighter = ()=>{
+const navHighlighter = () => {
     let headerArea = document.querySelector(".header-area");
     let headerTopSet = window.pageYOffset;
 
-    if(headerTopSet > 50) {
+    if (headerTopSet > 50) {
         headerArea.style.borderBottom = "1px solid rgba(192, 192, 192, 0.3)";
     } else {
         headerArea.style.borderBottom = "none";
     }
 
     let scrollY = window.pageYOffset;
-    
+
     sections.forEach(item => {
         const sectionHeight = item.offsetHeight;
         const sectionTop = item.offsetTop - 100;
         let sectionId = item.getAttribute("id");
 
-        if (scrollY == 0)
-         {
+        if (scrollY == 0) {
             document.querySelector(`nav a[href*=home]`).classList.add("active-lnk");
-         }
-        
-        if (scrollY > sectionTop && scrollY <= sectionHeight + sectionTop)
-         {
+        }
+
+        if (scrollY > sectionTop && scrollY <= sectionHeight + sectionTop) {
             document.querySelector(`nav a[href*=${sectionId}]`).classList.add("active-lnk");
-         } else
-            {
-                document.querySelector(`nav a[href*=${sectionId}]`).classList.remove("active-lnk");
-            }
+        } else {
+            document.querySelector(`nav a[href*=${sectionId}]`).classList.remove("active-lnk");
+        }
     })
 }
 
-window.addEventListener("scroll",navHighlighter);
+window.addEventListener("scroll", navHighlighter);
 
 
 // section about brand logo slider
@@ -52,24 +49,24 @@ $(document).ready(function () {
         pauseOnHover: false,
         responsive: [
             {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-              }
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
             },
             {
                 breakpoint: 1260,
                 settings: {
-                  slidesToShow: 3,
+                    slidesToShow: 3,
                 }
-              },
+            },
             {
                 breakpoint: 1440,
                 settings: {
-                  slidesToShow: 4,
+                    slidesToShow: 4,
                 }
             },
-          ]
+        ]
     });
 })
 
@@ -92,7 +89,7 @@ gsap.from(".open-animate .first", {
     left: "-100%",
     duration: 1.5,
     ease: Expo.easeInOut
-}) 
+})
 gsap.from(".open-animate .second", {
     left: "-100%",
     duration: 1.5,
@@ -104,34 +101,34 @@ gsap.from(".open-animate .second", {
 var t1 = gsap.timeline();
 let mediaQuery = matchMedia("(max-width: 767px)").matches ? true : false;
 
-t1.to(".open-animate",{
+t1.to(".open-animate", {
     visibility: "hidden",
     opacity: 0,
     delay: 2,
-    onComplete: ()=> {
+    onComplete: () => {
         ScrollTrigger.refresh()
     }
 })
 
-t1.from(".section-img",{
-   opacity: 0
+t1.from(".section-img", {
+    opacity: 0
 })
 t1.from("header .logo", {
     opacity: 0,
     y: -50,
 })
 if (mediaQuery) {
-    t1.from(".m-menu",{
+    t1.from(".m-menu", {
         opacity: 0,
         y: -50
     })
-} 
+}
 else {
     t1.from("nav li", {
-    opacity: 0,
-    y: -50,
-    stagger: 0.2,
-})
+        opacity: 0,
+        y: -50,
+        stagger: 0.2,
+    })
 }
 t1.from(".content .desc", {
     opacity: 0,
@@ -154,7 +151,7 @@ t1.from(".swipe-down", {
 
 // section animations
 
-gsap.from(".about .img-content",{
+gsap.from(".about .img-content", {
     scrollTrigger: {
         trigger: "#about",
         start: matchMedia("(max-width: 1024px)").matches ? "top center" : "center bottom"
@@ -162,7 +159,7 @@ gsap.from(".about .img-content",{
     x: -100,
     opacity: 0
 })
-gsap.from(".about .txt-content",{
+gsap.from(".about .txt-content", {
     scrollTrigger: {
         trigger: "#about",
         start: matchMedia("(max-width: 1024px)").matches ? "top center" : "center bottom"
@@ -177,7 +174,7 @@ gsap.from(".about .brands-area", {
     },
     opacity: 0
 })
-gsap.from("#services .section-title",{
+gsap.from("#services .section-title", {
     scrollTrigger: {
         trigger: "#services",
         start: matchMedia("(max-width: 1024px)").matches ? "top center" : "center bottom",
@@ -185,7 +182,7 @@ gsap.from("#services .section-title",{
     opacity: 0,
     y: -25
 })
-gsap.from("#services .section-text",{
+gsap.from("#services .section-text", {
     scrollTrigger: {
         trigger: "#services",
         start: matchMedia("(max-width: 1024px)").matches ? "top center" : "center bottom"
@@ -193,7 +190,7 @@ gsap.from("#services .section-text",{
     opacity: 0,
     y: -25
 })
-gsap.from("#services .item-list .item",{
+gsap.from("#services .item-list .item", {
     scrollTrigger: {
         trigger: "#services",
         start: matchMedia("(max-width: 1024px)").matches ? "top center" : "center bottom"
@@ -202,7 +199,7 @@ gsap.from("#services .item-list .item",{
     opacity: 0,
     stagger: 0.3
 })
-gsap.from("#portfolio .section-title",{
+gsap.from("#portfolio .section-title", {
     scrollTrigger: {
         trigger: "#portfolio",
         start: "top+=100 center",
@@ -210,7 +207,7 @@ gsap.from("#portfolio .section-title",{
     opacity: 0,
     y: -25
 })
-gsap.from("#portfolio .section-text",{
+gsap.from("#portfolio .section-text", {
     scrollTrigger: {
         trigger: "#portfolio",
         start: "top+=100 center"
@@ -218,7 +215,7 @@ gsap.from("#portfolio .section-text",{
     opacity: 0,
     y: -25
 })
-gsap.from("#portfolio .item-wrapper .item",{
+gsap.from("#portfolio .item-wrapper .item", {
     scrollTrigger: {
         trigger: "#portfolio",
         start: "top+=100 center"
@@ -227,7 +224,7 @@ gsap.from("#portfolio .item-wrapper .item",{
     opacity: 0,
     stagger: 0.3
 })
-gsap.from("#customers .left",{
+gsap.from("#customers .left", {
     scrollTrigger: {
         trigger: "#customers",
         start: "top+=100 center"
@@ -235,7 +232,7 @@ gsap.from("#customers .left",{
     x: -50,
     opacity: 0
 })
-gsap.from("#customers .right",{
+gsap.from("#customers .right", {
     scrollTrigger: {
         trigger: "#customers",
         start: "top+=100 center"
@@ -243,7 +240,7 @@ gsap.from("#customers .right",{
     x: 50,
     opacity: 0
 })
-gsap.from("#customers .contact",{
+gsap.from("#customers .contact", {
     scrollTrigger: {
         trigger: "#customers",
         start: "top+=100 center"
@@ -251,7 +248,7 @@ gsap.from("#customers .contact",{
     delay: 0.5,
     opacity: 0
 })
-gsap.from(".footer-line",{
+gsap.from(".footer-line", {
     scrollTrigger: {
         trigger: "footer",
         start: "top bottom",
@@ -259,7 +256,7 @@ gsap.from(".footer-line",{
     width: "0",
     duration: 1.5
 })
-gsap.from("footer .logo",{
+gsap.from("footer .logo", {
     scrollTrigger: {
         trigger: "footer",
         start: "top bottom",
@@ -267,7 +264,7 @@ gsap.from("footer .logo",{
     opacity: 0,
     y: -50
 })
-gsap.from(".footer-nav li",{
+gsap.from(".footer-nav li", {
     scrollTrigger: {
         trigger: "footer",
         start: "top bottom",
@@ -276,7 +273,7 @@ gsap.from(".footer-nav li",{
     y: -50,
     stagger: 0.3
 })
-gsap.from(".social .title",{
+gsap.from(".social .title", {
     scrollTrigger: {
         trigger: "footer",
         start: "top bottom",
@@ -284,7 +281,7 @@ gsap.from(".social .title",{
     opacity: 0,
     y: -50
 })
-gsap.from(".social li",{
+gsap.from(".social li", {
     scrollTrigger: {
         trigger: "footer",
         start: "top bottom",
@@ -293,7 +290,7 @@ gsap.from(".social li",{
     y: -10,
     stagger: 0.3
 })
-gsap.from(".copyright",{
+gsap.from(".copyright", {
     scrollTrigger: {
         trigger: "footer",
         start: "top bottom",
@@ -310,18 +307,18 @@ const closeMenu = document.querySelector(".close");
 const itemBody = document.getElementsByTagName("body")[0];
 const menuLnk = document.querySelectorAll(".m-lnk");
 
-openMenu.addEventListener("click", ()=> {
+openMenu.addEventListener("click", () => {
     menuWrapper.style.left = "0";
     itemBody.style.overflowY = "hidden";
 })
 
-closeMenu.addEventListener("click", ()=> {
+closeMenu.addEventListener("click", () => {
     menuWrapper.style.left = "-100%";
     itemBody.style.overflowY = "scroll";
 })
 
 menuLnk.forEach(item => {
-    item.addEventListener("click",()=>{
+    item.addEventListener("click", () => {
         menuWrapper.style.left = "-100%";
         itemBody.style.overflowY = "scroll";
     })

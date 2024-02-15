@@ -186,7 +186,7 @@ header .logo img {
 }
 @media only screen and (max-width: 767px) {
   header .logo img {
-    width: 30px;
+    width: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -246,7 +246,7 @@ header .m-menu {
 .m-menu-wrapper a {
   color: #000;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fdf50e;
+  -webkit-text-stroke-color: #fff;
   font-size: 35px;
   font-family: "poppins-bold";
   text-decoration: none;
@@ -603,7 +603,8 @@ header .m-menu {
 .about .content {
   display: inline-flex;
   align-items: center;
-  gap: 61px;
+  justify-content: space-between;
+  gap: 60px;
 }
 @media only screen and (max-width: 1024px) {
   .about .content {
@@ -666,7 +667,7 @@ header .m-menu {
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .about .txt-content h2 {
-    font-size: 40px;
+    font-size: 31px;
   }
 }
 .about .txt-content h2::before {
@@ -675,7 +676,6 @@ header .m-menu {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   position: absolute;
-  left: 11px;
   bottom: 2px;
   z-index: 1;
 }
@@ -833,7 +833,6 @@ header .m-menu {
 
 .portfolio {
   background-color: #171717;
-  margin-top: 115px;
   padding: 50px 0;
 }
 @media only screen and (max-width: 1024px) {
@@ -887,7 +886,7 @@ header .m-menu {
 
 .customer {
   padding-top: 85px;
-  margin-bottom: 80px;
+  padding-bottom: 85px;
   overflow-x: hidden;
 }
 .customer .container {
@@ -974,29 +973,19 @@ header .m-menu {
 }
 
 .contact {
-  width: calc(100% - 600px);
+  width: calc(100% - 200px);
   margin-right: auto;
   margin-left: auto;
-  margin-top: 105px;
-  padding-top: 100px;
-  padding-bottom: 87px;
-  padding-right: 100px;
-  background-color: #fdf50e;
+  padding: 40px 20px ;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (max-width: 1024px) {
   .contact {
-    width: calc(100% - 30px);
-    padding-right: 0;
-    margin-top: 55px;
-    padding-top: 50px;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .contact {
-    padding-bottom: 150px;
+    width: 100% ;
+    padding: 35px 20px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -1010,22 +999,27 @@ header .m-menu {
   }
 }
 .contact .contact-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
 }
 .contact .contact-bg img {
-  width: 100%;
+  width: 50%;
 }
 .contact .item {
   color: #000;
   width: 50%;
   z-index: 1;
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1224px) {
+.contact .contact-bg {
+    display: none;
+  }
   .contact .item {
-    padding-bottom: 50px;
+    color: #000;
+    width: 100%;
+    z-index: 1;
   }
 }
 .contact .item-title {
@@ -1035,7 +1029,7 @@ header .m-menu {
 }
 @media only screen and (max-width: 1024px) {
   .contact .item-title {
-    font-size: 24px;
+    font-size: 33px;
   }
 }
 .contact .item-text {
@@ -1052,7 +1046,7 @@ header .m-menu {
 .contact .item-btn {
   display: flex;
   justify-content: center;
-  gap: 46px;
+  gap: 15px;
 }
 @media only screen and (max-width: 1024px) {
   .contact .item-btn {
@@ -1061,7 +1055,7 @@ header .m-menu {
 }
 .contact .item-btn a {
   display: block;
-  padding: 15px 44px;
+  padding: 15px;
   border: 1px solid #000;
   text-decoration: none;
   color: #000;
@@ -1070,19 +1064,14 @@ header .m-menu {
 }
 @media only screen and (max-width: 1024px) {
   .contact .item-btn a {
-    padding: 7px 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
   }
 }
 @media only screen and (max-width: 767px) {
   .contact .item-btn a {
-    width: 40%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .contact .item-btn a {
-    width: 30%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -1100,10 +1089,9 @@ header .m-menu {
 footer {
   width: 100%;
   padding-bottom: 23px;
-  margin-top: 85px;
 }
 footer .footer-line {
-  width: 100%;
+  width: 100% !important;
   max-width: 100%;
   height: 1px;
   background-color: #fff;
@@ -1204,7 +1192,7 @@ footer .social a {
   width: 40px;
   height: 40px;
   display: block;
-  background-color: #fff;
+  background-color: #fff500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1219,7 +1207,7 @@ footer .social a img {
   width: 40px;
   height: 40px;
   display: block;
-  background-color: #fff;
+  background-color: #fff500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1268,7 +1256,7 @@ header .social a {
   width: 40px;
   height: 40px;
   display: block;
-  background-color: #fff;
+  background-color: #fff500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1277,7 +1265,7 @@ header .social a {
 }
 
 header .social a img {
-  width: 75%;
+  width: 100%;
 }
 
 header .social nav ul {
@@ -1316,4 +1304,82 @@ header .social nav ul {
     width: 100%;
     padding: 0 10px;
   }
+}
+
+.divBox {
+  background-color: #fdf50e;
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+}
+ .mobileBanner {
+   display: none;
+ }
+
+ .titlePortolio {
+  margin-bottom: 50px;
+  margin-top: 100px;
+ }
+
+ .carousel {
+   background: #FAFAFA;
+ }
+
+ .carousel-cell {
+   width: 66%;
+   height: 400px;
+   margin-right: 10px;
+   background: #171717;
+ }
+
+ .carousel-cell-image {
+   display: block;
+   max-height: 100%;
+   margin: 0 auto;
+   max-width: 100%;
+   opacity: 1;
+   -webkit-transition: opacity 0.4s;
+   transition: opacity 0.4s;
+ }
+
+ /* fade in lazy loaded image */
+ .carousel-cell-image.flickity-lazyloaded,
+ .carousel-cell-image.flickity-lazyerror {
+   opacity: 1;
+ }
+
+ .flickity-slider {
+   background-color: #171717;
+ }
+ .flickity-viewport {
+   background-color: #171717;
+ }
+
+@media (max-width: 767px) {
+  .services .item-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 83px;
+    row-gap: 87px;
+    flex-direction: column;
+    align-items: center;
+  }
+    .services .item {
+    text-align: center;
+    width: 80%;
+  }
+    .contact .item-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .mobileBanner {
+      display: block;
+    }
+    .desktopBanner{
+      display: none;
+    }
 }

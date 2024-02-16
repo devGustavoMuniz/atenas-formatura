@@ -1288,13 +1288,22 @@ header .social nav ul {
 }
 
 .carousel-cell {
-    width: 33%;
+    width: 100%;
     padding: 0 30px;
+}
+
+@media (max-width: 1200px) {
+  .footerBox {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 992px) {
   .carousel-cell {
-    width: 50%;
+    width: 100%;
     padding: 0 15px;
   }
 }
@@ -1328,9 +1337,8 @@ header .social nav ul {
  }
 
  .carousel-cell {
-   width: 66%;
-   height: 400px;
-   margin-right: 10px;
+   width: 100%;
+   height: 550px;
    background: #171717;
  }
 

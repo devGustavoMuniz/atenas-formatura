@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -22,6 +21,17 @@
 
         main {
             background-color: #171717 !important;
+        }
+
+        .main-carousel {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1200px) {
+            .main-carousel {
+                width: 100%;
+            }
         }
     </style>
     <div class="m-menu-wrapper">
@@ -73,17 +83,17 @@
                     </div>
                     <div class="section-text">
                         <p>Explore nosso portfólio de fotos e mergulhe nas imagens que capturam a essência e a emoção de formaturas memoráveis.
-                        Cada imagem conta uma história única de sucesso e celebração.</p>
+                            Cada imagem conta uma história única de sucesso e celebração.</p>
                     </div>
                 </div>
             </div>
             <div class="container">
-                
+
                 <div class="section-title">
                     <h2>Baile</h2>
                 </div>
                 <div class="item-wrapper">
-                    <div class="main-carousel" style="width: 100%;" data-flickity='{ "lazyLoad": true }'>
+                    <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
                         <div class="carousel-cell">
                             <a href="assets/images/baile/baile (1).jpg" data-fancybox="gallery-portfolio">
                                 <img class="carousel-cell-image" src="assets/images/baile/baile (1).jpg" />
@@ -171,7 +181,7 @@
                 </div>
 
                 <div class="item-wrapper">
-                    <div class="main-carousel" style="width: 100%;" data-flickity='{ "lazyLoad": true }'>
+                    <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
                         <div class="carousel-cell">
                             <a href="assets/images/colacao/colacao (1).jpg" data-fancybox="gallery-portfolio">
                                 <img class="carousel-cell-image" src="assets/images/colacao/colacao (1).jpg" />
@@ -244,7 +254,7 @@
                 </div>
 
                 <div class="item-wrapper">
-                    <div class="main-carousel" style="width: 100%;" data-flickity='{ "lazyLoad": true }'>
+                    <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
                         <div class="carousel-cell">
                             <a href="assets/images/missa/missa (1).jpg" data-fancybox="gallery-portfolio">
                                 <img class="carousel-cell-image" src="assets/images/missa/missa (1).jpg" />
@@ -317,7 +327,7 @@
                 </div>
 
                 <div class="item-wrapper">
-                    <div class="main-carousel" style="width: 100%;" data-flickity='{ "lazyLoad": true }'>
+                    <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
                         <div class="carousel-cell">
                             <a href="assets/images/passeio/passeio (1).jpg" data-fancybox="gallery-portfolio">
                                 <img class="carousel-cell-image" src="assets/images/passeio/passeio (1).jpg" />
@@ -385,51 +395,48 @@
         </section>
     </main>
     <footer>
-    <div class="footer-line"></div>
-    <div class="container">
-        <div class="footerBox">
-            <div class="logo logoFooter">
-                <a href="#">
-                    <img src="assets/images/logo.png" width="125" alt="">
-                </a>
-            </div>
-            <div class="footer-mid">
-                <div class="footer-nav">
+        <div class="footer-line"></div>
+        <div class="container">
+            <div class="footerBox">
+                <div class="logo logoFooter">
+                    <a href="#">
+                        <img src="assets/images/logo.png" width="125" alt="">
+                    </a>
+                </div>
+                <div class="footer-mid">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="service.html">Serviços</a></li>
+                            <li><a href="portfolio.html">Portfólio</a></li>
+                            <li><a href="#customers">Clientes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title">Mais Informações</div>
+                    <div class="rowInfo">
+                        <div class="BoxInfo">
+                            <a class="icon" target="_blank" href="https://maps.app.goo.gl/p5iovtfuDH6LQkkZ6"><img src="assets/images/location.png" alt=""></a>
+                            <p>Av. Maria de Paiva Garcia, 345 <br>Pouso Algre, Minas Gerais</p>
+                        </div>
+                        <div class="BoxInfo">
+                            <a class="icon" target="_blank"><img src="assets/images/cnpj.png" alt=""></a>
+                            <p>CNPJ: 07.655.128/0001-32</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="title">Nossas Redes</div>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="service.html">Serviços</a></li>
-                        <li><a href="portfolio.html">Portfólio</a></li>
-                        <li><a href="#customers">Clientes</a></li>
+                        <li><a target="_blank" href="https://api.whatsapp.com/send?phone=553534251890"><img src="assets/images/wp-icon.svg" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/atenasformaturas/"><img src="assets/images/instagram-icon.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="info">
-                <div class="title">Mais Informações</div>
-                <div class="rowInfo">
-                    <div class="BoxInfo">
-                        <a class="icon" target="_blank" href="https://maps.app.goo.gl/p5iovtfuDH6LQkkZ6"><img
-                                src="assets/images/location.png" alt=""></a>
-                        <p>Av. Maria de Paiva Garcia, 345 <br>Pouso Algre, Minas Gerais</p>
-                    </div>
-                    <div class="BoxInfo">
-                        <a class="icon" target="_blank"><img src="assets/images/cnpj.png" alt=""></a>
-                        <p>CNPJ: 07.655.128/0001-32</p>
-                    </div>
-                </div>
-            </div>
-            <div class="social">
-                <div class="title">Nossas Redes</div>
-                <ul>
-                    <li><a target="_blank" href="https://api.whatsapp.com/send?phone=553534251890"><img
-                                src="assets/images/wp-icon.svg" alt=""></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/atenasformaturas/"><img
-                                src="assets/images/instagram-icon.svg" alt=""></a></li>
-                </ul>
-            </div>
         </div>
-    </div>
-    <div class="copyright">© Atenas Formaturas 2024 Todos os direitos reservados.</div>
+        <div class="copyright">© Atenas Formaturas 2024 Todos os direitos reservados.</div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/slick.min.js"></script>

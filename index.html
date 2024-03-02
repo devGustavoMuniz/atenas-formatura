@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Atenas Formaturas</title>
 </head>
@@ -44,9 +45,9 @@
             <ul>
                 <li><a href="#home" class="active-lnk">Home</a></li>
                 <li><a href="#about" class="">Sobre</a></li>
-                <li><a href="service.html" class="">Serviços</a></li>
-                <li><a href="portfolio.html" class="">Portfólio</a></li>
-                <li><a href="#customers" class="">Clientes</a></li>
+                <li><a href="#services" class="">Serviços</a></li>
+                <li><a href="#portfolio" class="">Portfólio</a></li>
+                <li><a href="#" class="offer-lnk btnAreaCliente">Área do Cliente</a></li>
             </ul>
         </nav>
         <nav style="display: none;">
@@ -67,13 +68,15 @@
             <img src="assets/images/m-menu.svg" alt="">
         </div>
     </header>
-    <main>
+    <main style="position: relative;">
         <section class="section section-main" id="home">
-            <div class="section-img">
-                <img class="desktopBanner" src="assets/images/teste.png" alt="">
-                <img class="mobileBanner" src="assets/images/testeMobile.png" alt="">
+            <div class="main-carousel" data-flickity='{ "lazyLoad": true, "autoPlay": true }'>
+                <div class="carousel-cell" style="background: url('assets/images/teste.png');">
+                </div>
+                <div class="carousel-cell" style="background: url('assets/images/teste.png');">
+                </div>
             </div>
-            <div class="content">
+            <div class="content banner-content">
                 <div class="desc">
                     <div class="desc-items">
                         <div class="title">
@@ -298,71 +301,296 @@
                 <div class="section-title">
                     <h2>Portfólio</h2>
                 </div>
-                <div class="section-text">
+                <div class="section-text" style="margin-bottom: 100px;">
                     <p>Explore nosso portfólio de fotos e mergulhe nas imagens que capturam a essência e a emoção de formaturas memoráveis.
                         Cada imagem conta uma história única de sucesso e celebração.</p>
                 </div>
-                <div class="item-wrapper">
-                    <div class="item">
-                        <a href="assets/images/hot/best (1).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (1).jpg" alt="">
-                        </a>
+                <div class="row">
+                    <div style="margin-bottom: 80px;">
+                        <div class="section-title">
+                            <h2>Missa</h2>
+                        </div>
+                        <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (1).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (1).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (2).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (2).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (3).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (3).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (4).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (4).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (5).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (5).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (6).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (6).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (7).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (7).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (8).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (8).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (9).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (9).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (10).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (10).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (11).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (11).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/missa/missa (12).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/missa/missa (12).jpg" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (2).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (2).jpg" alt="">
-                        </a>
+                    <div style="margin-bottom: 80px;">
+                        <div class="section-title">
+                            <h2>Colação</h2>
+                        </div>
+                        <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (1).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (1).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (2).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (2).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (3).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (3).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (4).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (4).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (5).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (5).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (6).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (6).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (7).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (7).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (8).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (8).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (9).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (9).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (10).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (10).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (11).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (11).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/colacao/colacao (12).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/colacao/colacao (12).jpg" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (3).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (3).jpg" alt="">
-                        </a>
+                    <div style="margin-bottom: 80px;">
+                        <div class="section-title">
+                            <h2>Baile</h2>
+                        </div>
+                        <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (1).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (1).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (2).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (2).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (3).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (3).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (4).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (4).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (5).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (5).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (6).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (6).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (7).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (7).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (8).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (8).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (9).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (9).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (10).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (10).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (11).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (11).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (12).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (12).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (13).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (13).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (14).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (14).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/baile/baile (15).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/baile/baile (15).jpg" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (4).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (4).jpg" alt="">
-                        </a>
+                    <div style="margin-bottom: 80px;">
+                        <div class="section-title">
+                            <h2>Passeio</h2>
+                        </div>
+                        <div class="main-carousel" data-flickity='{ "lazyLoad": true }'>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (1).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (1).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (2).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (2).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (3).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (3).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (4).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (4).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (5).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (5).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (6).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (6).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (7).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (7).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (8).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (8).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (9).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (9).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (10).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (10).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (11).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (11).jpg" />
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="assets/images/passeio/passeio (12).jpg" data-fancybox="gallery-portfolio">
+                                    <img class="carousel-cell-image" src="assets/images/passeio/passeio (12).jpg" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (5).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (5).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (6).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (6).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (7).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (7).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (8).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (8).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (9).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (9).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (10).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (10).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (11).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (11).jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="assets/images/hot/best (12).jpg" data-fancybox="gallery-portfolio">
-                            <img src="assets/images/hot/best (12).jpg" alt="">
-                        </a>
-                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -388,6 +616,58 @@
             </div>
         </section>
     </main>
+    <style>
+        .banner-content {
+            position: absolute !important;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        .section-main {
+            height: 850px;
+        }
+
+        .section-main .carousel-cell {
+            height: 850px;
+            background-color: #000 !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center center !important;
+        }
+
+        .section-main .flickity-prev-next-button,
+        .section-main .flickity-page-dots {
+            display: none;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .btnAreaCliente {
+            color: #fdf50e;
+            border: 1px solid #fdf50e;
+            padding: 15px 10px;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.5s ease;
+        }
+
+        .btnAreaCliente:hover {
+            box-shadow: 0 -3.3em 0 0 #fdf50e inset;
+            -webkit-box-shadow: 0 -3.3em 0 0 #fdf50e inset;
+            -moz-box-shadow: 0 -3.3em 0 0 #fdf50e inset;
+            color: #000;
+        }
+
+        @media (max-width: 1200px) {
+            .main-carousel {
+                width: 100%;
+            }
+        }
+    </style>
     <footer>
         <div class="footer-line"></div>
         <div class="container">
@@ -437,6 +717,7 @@
     <script src="assets/js/fancybox.umd.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

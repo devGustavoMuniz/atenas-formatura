@@ -104,7 +104,7 @@ let mediaQuery = matchMedia("(max-width: 767px)").matches ? true : false;
 t1.to(".open-animate", {
     visibility: "hidden",
     opacity: 0,
-    delay: 2,
+    delay: 1,
     onComplete: () => {
         ScrollTrigger.refresh()
     }
@@ -115,18 +115,18 @@ t1.from(".section-img", {
 })
 t1.from("header .logo", {
     opacity: 0,
-    y: -50,
+    y: 0,
 })
 if (mediaQuery) {
     t1.from(".m-menu", {
         opacity: 0,
-        y: -50
+        y: 0
     })
 }
 else {
     t1.from("nav li", {
         opacity: 0,
-        y: -50,
+        y: 0,
         stagger: 0.2,
     })
 }
@@ -136,17 +136,17 @@ t1.from(".content .desc", {
 })
 t1.from(".info .title span", {
     opacity: 0,
-    y: -50,
+    y: 0,
     stagger: 0.1,
 })
 t1.from(".info-item .item", {
     opacity: 0,
-    y: -50,
+    y: 0,
     stagger: 0.3,
 })
 t1.from(".swipe-down", {
     opacity: 0,
-    y: -50,
+    y: 0,
 })
 
 // section animations
